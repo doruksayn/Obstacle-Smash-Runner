@@ -5,7 +5,11 @@ public class planeSpawner : MonoBehaviour
 {
     public GameObject newPlane;
     public Transform player;           // top objesi  
-    public float destroyDelay = 10f;   // eski setin yok olma süresi
+    public float destroyDelay = 1f;   // eski setin yok olma süresi
+
+    private bool isSecondPlane;
+
+    private GameObject _newplane;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -13,6 +17,7 @@ public class planeSpawner : MonoBehaviour
         {
 
             Debug.Log("Worked Plane Generator.");
+            isSecondPlane = true;
             SpawnObstacle();
 
         }
@@ -24,11 +29,20 @@ public class planeSpawner : MonoBehaviour
         // Spawn konumunu hesapla
         Vector3 spawnPos = new Vector3(0, 0, player.position.z + 5.5f);
 
+        GameObject updatedPlane = _newplane;
+
         // Yeni seti oluştur
-        GameObject _newplane = Instantiate(newPlane, spawnPos, Quaternion.identity);
+        _newplane = Instantiate(newPlane, spawnPos, Quaternion.identity);
 
         // Eski setleri destroy et
-        // Destroy(newSet, destroyDelay);
+        if (isSecondPlane == true)
+        {
+            Destroy(updatedPlane, destroyDelay);
+            isSecondPlane = false;
+            Debug.Log("Destroy plane worked.");
+
+        }
+
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

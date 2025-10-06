@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfecc4482d9f7514eb66968016ecc500, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ballMovement
-  forwardSpeed: 0.1
+  forwardSpeed: 1
   horizontalSpeed: 0.2
   xLimit: 0.2
   boostSpeed: 1
@@ -534,6 +534,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleSpawner
   obstacleSets:
   - {fileID: 3606247268713798679, guid: 7857f912969e03040be694e5d2eb91da, type: 3}
+  - {fileID: 3606247268713798679, guid: 511613b52ed9c1444baa182a210f6a33, type: 3}
+  - {fileID: 3606247268713798679, guid: 91bc15c9a1e0f6747bd1225899c407a5, type: 3}
   player: {fileID: 1280164}
   spawnDistance: 0.3
   destroyDelay: 0.1

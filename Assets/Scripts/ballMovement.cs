@@ -14,6 +14,7 @@ public class ballMovement : MonoBehaviour
     private float time = 0f;
 
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,8 +25,10 @@ public class ballMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 forwardMove = transform.forward * forwardSpeed * Time.fixedDeltaTime;
-        rb.MovePosition(rb.position + forwardMove);
+        //Vector3 forwardMove = transform.forward * forwardSpeed * Time.fixedDeltaTime;
+        rb.AddForce(Vector3.forward * forwardSpeed * Time.fixedDeltaTime);
+
+
 
         // Sağ/Sol tıklama kontrolü
         float currentX = rb.position.x;
@@ -45,14 +48,16 @@ public class ballMovement : MonoBehaviour
 
         rb.MovePosition(new Vector3(targetX, rb.position.y, rb.position.z));
 
+        /*
         if (Keyboard.current.spaceKey.isPressed)  // Mouse için
         {
             rb.MovePosition(rb.position + transform.forward * forwardSpeed * Time.fixedDeltaTime * 2); // boost
         }
+        */
 
         time += Time.fixedDeltaTime;
 
-        if (forwardSpeed <= 0.6)
+        if (forwardSpeed <= 5)
         {
             if (time >= interval)
             {
@@ -62,7 +67,7 @@ public class ballMovement : MonoBehaviour
             }
         }
 
-        else if (forwardSpeed >= 0.6)
+        else if (forwardSpeed >= 0.3)
         {
 
             return;
