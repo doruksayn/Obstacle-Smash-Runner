@@ -51,20 +51,20 @@ public class ballMovement : MonoBehaviour
         }
 
         time += Time.fixedDeltaTime;
-        Debug.Log("Timer: " + time);
+
         if (forwardSpeed <= 0.6)
         {
             if (time >= interval)
             {
                 forwardSpeed = speedIncrement * forwardSpeed;
                 time = 0f;
-                Debug.Log("Speed increased!" + forwardSpeed);
+
             }
         }
 
         else if (forwardSpeed >= 0.6)
         {
-            Debug.Log("Speed is on limit");
+
             return;
 
         }
