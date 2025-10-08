@@ -13,9 +13,12 @@ GameObject:
   - component: {fileID: 6013938131763730350}
   - component: {fileID: 1388068360223944746}
   - component: {fileID: 4824841929579589308}
+  - component: {fileID: 3714361376575523312}
+  - component: {fileID: 288150634785685758}
+  - component: {fileID: 1663047044258244578}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: Untagged
+  m_TagString: isPlayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68,7 +71,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: a218c3187ae0e0f45b6088da8f953f1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -139,3 +142,48 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3714361376575523312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4221039012779745403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfecc4482d9f7514eb66968016ecc500, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ballMovement
+  forwardSpeed: 0.1
+  horizontalSpeed: 0.2
+  xLimit: 0.2
+  speedIncrement: 1.01
+  interval: 3
+--- !u!114 &288150634785685758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4221039012779745403}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a60dc88f3fb67e740bb41a6a669d195c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::obstacleSpawnTrigger
+--- !u!114 &1663047044258244578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4221039012779745403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1790b60f44d4e514f87a5a3edbf9cf9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::planeSpawner
+  newPlane: {fileID: 3268228726140345749, guid: f7ce978c802981e4ebe0e1ca77f0e428, type: 3}
+  player: {fileID: 449301850290001665}
+  destroyDelay: 1
+  firstPlane: {fileID: 0}

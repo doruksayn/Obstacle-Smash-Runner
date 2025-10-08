@@ -2,16 +2,16 @@ using UnityEngine;
 
 public class ObstacleSpawner : MonoBehaviour
 {
-    public GameObject[] obstacleSets;  // 3’lü prefab setleri buraya sürükle
-    public Transform player;           // top objesi
-    public float spawnDistance = 30f;  // yeni setin topun önüne ekleneceği mesafe
-    public float destroyDelay = 0.5f;   // eski setin yok olma süresi
+    public GameObject[] obstacleSets; // 3’lü prefab setleri buraya sürükle
+    public Transform player; // top objesi
+    public float spawnDistance = 30f; // yeni setin topun önüne ekleneceği mesafe
+    public float destroyDelay = 0.5f; // eski setin yok olma süresi
 
     private float lastSpawnZ = 5f;
 
     private GameObject newSet;
 
-    public bool isSecondSet;          // son spawn konumu (Z ekseni)
+    public bool isSecondSet; // son spawn konumu (Z ekseni)
 
     void Start()
     {
@@ -25,7 +25,7 @@ public class ObstacleSpawner : MonoBehaviour
         int randIndex = Random.Range(0, obstacleSets.Length);
 
         // Spawn konumunu hesapla
-        Vector3 spawnPos = new Vector3(0, 0, player.position.z + 0.5f);
+        Vector3 spawnPos = new Vector3(0, 0, player.position.z + 0.6f);
 
         GameObject updatedSet = newSet;
 
@@ -38,7 +38,6 @@ public class ObstacleSpawner : MonoBehaviour
             Destroy(updatedSet, destroyDelay);
             isSecondSet = false;
         }
-
 
         // Spawn konumunu güncelle
         lastSpawnZ += spawnDistance;
