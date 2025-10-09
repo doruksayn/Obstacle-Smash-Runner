@@ -1,6 +1,5 @@
 using UnityEngine;
 
-
 public class obstacleCheck : MonoBehaviour
 {
     public void HandleCollision(GameObject hitObstacle, GameObject player)
@@ -27,7 +26,6 @@ public class obstacleCheck : MonoBehaviour
                 rb.linearVelocity = Vector3.zero;
                 rb.angularVelocity = Vector3.zero;
             }
-
         }
     }
 }

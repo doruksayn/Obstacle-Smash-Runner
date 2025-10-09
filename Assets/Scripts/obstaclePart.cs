@@ -8,9 +8,8 @@ public class ObstaclePart : MonoBehaviour
         {
             // Parent içindeki ObstacleCheck script'ini çağır
             Debug.Log(this.gameObject.name + other.gameObject.name + "hello");
-            GetComponentInParent<obstacleCheck>()?.HandleCollision(this.gameObject, other.gameObject);
-
+            GetComponentInParent<obstacleCheck>()
+                ?.HandleCollision(this.gameObject, other.gameObject);
         }
     }
 }
-
