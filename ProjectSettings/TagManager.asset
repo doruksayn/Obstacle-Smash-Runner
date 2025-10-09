@@ -8,6 +8,7 @@ TagManager:
   - Pass
   - isPlayer
   - planeSpawner
+  - worldSpawner
   layers:
   - Default
   - TransparentFX

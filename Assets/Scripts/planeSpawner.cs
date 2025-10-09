@@ -17,11 +17,11 @@ public class planeSpawner : MonoBehaviour
             Debug.Log("Worked Plane Generator.");
             Destroy(firstPlane, destroyDelay);
             isSecondPlane = true;
-            SpawnObstacle();
+            SpawnPlane();
         }
     }
 
-    public void SpawnObstacle()
+    public void SpawnPlane()
     {
         // Spawn konumunu hesapla
         Vector3 spawnPos = new Vector3(0, 0, player.position.z + 5.45f);

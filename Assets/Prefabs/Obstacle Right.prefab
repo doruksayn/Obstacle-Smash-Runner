@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 498383474357103487}
   m_Layer: 0
   m_Name: Obstacle (1)
-  m_TagString: Pass
+  m_TagString: notPass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,7 +115,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 45eb7efec0c8f504285b382733758e52, type: 2}
+  - {fileID: 2100000, guid: cf8afab493401a844b55d5d32811c76c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -174,7 +174,7 @@ GameObject:
   - component: {fileID: 5850688810085705245}
   m_Layer: 0
   m_Name: Obstacle (2)
-  m_TagString: notPass
+  m_TagString: Pass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -227,7 +227,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2ae122b477971bb44a80b92678821ab3, type: 2}
+  - {fileID: 2100000, guid: 0de6bcb7177a92147a1018cd8322d71d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -339,7 +339,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2ae122b477971bb44a80b92678821ab3, type: 2}
+  - {fileID: 2100000, guid: cf8afab493401a844b55d5d32811c76c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -401,7 +401,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4158681094781800468, guid: ce621a2ca21da504a8c6d2cdb3ba075d, type: 3}
       propertyPath: m_TagString
-      value: Pass
+      value: notPass
       objectReference: {fileID: 0}
     - target: {fileID: 8135125124405350505, guid: ce621a2ca21da504a8c6d2cdb3ba075d, type: 3}
       propertyPath: m_LocalScale.x
@@ -498,7 +498,7 @@ PrefabInstance:
     - target: {fileID: 7256982170619536434, guid: ce621a2ca21da504a8c6d2cdb3ba075d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 0de6bcb7177a92147a1018cd8322d71d, type: 2}
+      objectReference: {fileID: 2100000, guid: cf8afab493401a844b55d5d32811c76c, type: 2}
     - target: {fileID: 8135125124405350505, guid: ce621a2ca21da504a8c6d2cdb3ba075d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.14
@@ -581,7 +581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4158681094781800468, guid: ce621a2ca21da504a8c6d2cdb3ba075d, type: 3}
       propertyPath: m_TagString
-      value: notPass
+      value: Pass
       objectReference: {fileID: 0}
     - target: {fileID: 8135125124405350505, guid: ce621a2ca21da504a8c6d2cdb3ba075d, type: 3}
       propertyPath: m_LocalScale.x
