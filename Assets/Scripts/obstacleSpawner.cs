@@ -4,8 +4,8 @@ public class ObstacleSpawner : MonoBehaviour
 {
     public GameObject[] obstacleSets; // 3’lü prefab setleri buraya sürükle
     public Transform player; // top objesi
-    public float spawnDistance = 30f; // yeni setin topun önüne ekleneceği mesafe
-    public float destroyDelay = 0.5f; // eski setin yok olma süresi
+    public float spawnDistance; // yeni setin topun önüne ekleneceği mesafe
+    public float destroyDelay; // eski setin yok olma süresi
 
     private float lastSpawnZ = 5f;
 
@@ -25,7 +25,7 @@ public class ObstacleSpawner : MonoBehaviour
         int randIndex = Random.Range(0, obstacleSets.Length);
 
         // Spawn konumunu hesapla
-        Vector3 spawnPos = new Vector3(0, 0, player.position.z + 0.6f);
+        Vector3 spawnPos = new Vector3(0, 0, player.position.z -1f);
 
         GameObject updatedSet = newSet;
 

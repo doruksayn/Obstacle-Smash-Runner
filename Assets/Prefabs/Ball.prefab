@@ -13,9 +13,13 @@ GameObject:
   - component: {fileID: 6098715569616230220}
   - component: {fileID: 2600566634008781836}
   - component: {fileID: 97355350784648124}
+  - component: {fileID: 3710854435693119656}
+  - component: {fileID: 3475981968530126734}
+  - component: {fileID: 4649139826991394362}
+  - component: {fileID: 237655146483212088}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: Untagged
+  m_TagString: isPlayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,8 +33,8 @@ Transform:
   m_GameObject: {fileID: 6742830223553082643}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01204, y: 0.052, z: -2.57}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalPosition: {x: 0.01204, y: 0.052, z: 0}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -42,7 +46,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6742830223553082643}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -5014107771566305918, guid: 5aa7ba8368140934bbb26487aea1f1c2, type: 3}
 --- !u!23 &6098715569616230220
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -68,7 +72,10 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 4854872b72273f34a9b1b730396fd380, type: 2}
+  - {fileID: 2100000, guid: 0d288b0065efe8f4c99b061c3ec0c896, type: 2}
+  - {fileID: 2100000, guid: 5e432e196b3817f4c8af15e8fa15a7cf, type: 2}
+  - {fileID: 2100000, guid: e6a9c9352c8861144bd31cb81312ce0c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -110,7 +117,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &97355350784648124
 Rigidbody:
@@ -139,3 +146,64 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3710854435693119656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6742830223553082643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfecc4482d9f7514eb66968016ecc500, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ballMovement
+  forwardSpeed: 0.5
+  horizontalSpeed: 0.2
+  xLimit: 0.2
+  speedIncrement: 1.05
+  interval: 2
+--- !u!114 &3475981968530126734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6742830223553082643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1790b60f44d4e514f87a5a3edbf9cf9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::planeSpawner
+  newPlane: {fileID: 3268228726140345749, guid: f7ce978c802981e4ebe0e1ca77f0e428, type: 3}
+  player: {fileID: 7680160218820911414}
+  destroyDelay: 1
+  firstPlane: {fileID: 0}
+--- !u!114 &4649139826991394362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6742830223553082643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acace73c16444da41bf708a1ff0328a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::newWorldSpawner
+  newPlane: {fileID: 8239464284507382614, guid: 1cf6821db41841543b3025fe4f398ca0, type: 3}
+  player: {fileID: 7680160218820911414}
+  destroyDelay: 1
+  firstWorld: {fileID: 0}
+--- !u!114 &237655146483212088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6742830223553082643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a60dc88f3fb67e740bb41a6a669d195c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::obstacleSpawnTrigger

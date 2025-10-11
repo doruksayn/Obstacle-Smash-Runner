@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81180773991d8724ab7f2d216912b564, type: 3}
   m_Name: ChromaticAberration
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.03
+    m_Value: 0
 --- !u!114 &-7092124534792364890
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -31,7 +31,7 @@ MonoBehaviour:
   active: 1
   postExposure:
     m_OverrideState: 1
-    m_Value: 0.6
+    m_Value: 0.2
   contrast:
     m_OverrideState: 0
     m_Value: 5
@@ -65,10 +65,10 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.274
+    m_Value: 0.2
   smoothness:
     m_OverrideState: 1
-    m_Value: 0.241
+    m_Value: 0.3
   rounded:
     m_OverrideState: 0
     m_Value: 0
@@ -92,7 +92,7 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   intensity:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   scatter:
     m_OverrideState: 1
@@ -152,13 +152,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c01700fd266d6914ababb731e09af2eb, type: 3}
   m_Name: DepthOfField
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   mode:
     m_OverrideState: 1
     m_Value: 1
   gaussianStart:
     m_OverrideState: 1
-    m_Value: 40
+    m_Value: 8.34
   gaussianEnd:
     m_OverrideState: 1
     m_Value: 60
@@ -170,16 +170,16 @@ MonoBehaviour:
     m_Value: 0
   focusDistance:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.5
   aperture:
     m_OverrideState: 1
-    m_Value: 8
+    m_Value: 5
   focalLength:
     m_OverrideState: 1
-    m_Value: 30
+    m_Value: 20
   bladeCount:
     m_OverrideState: 1
-    m_Value: 6
+    m_Value: 5
   bladeCurvature:
     m_OverrideState: 1
     m_Value: 1

@@ -70,5 +70,5 @@
         "editor.defaultFormatter": "CSharpier.csharpier-vscode",
         "editor.formatOnSave": true
     },
-    "dotnet.defaultSolution": "Obstacle Smash Runner.sln"
+    "dotnet.defaultSolution": "Obstacle-Smash-Runner.sln"
 }
