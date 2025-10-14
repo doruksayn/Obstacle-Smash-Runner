@@ -2,6 +2,15 @@ using UnityEngine;
 
 public class obstacleCheck : MonoBehaviour
 {
+    private highScore newHighScore;
+    private retryButton newRetryButton;
+
+    void Start()
+    {
+        newHighScore = FindAnyObjectByType<highScore>();
+        newRetryButton = FindAnyObjectByType<retryButton>();
+    }
+
     public void HandleCollision(GameObject hitObstacle, GameObject player)
     {
         if (hitObstacle.CompareTag("Pass"))
@@ -12,12 +21,14 @@ public class obstacleCheck : MonoBehaviour
         }
         else if (hitObstacle.CompareTag("notPass"))
         {
-            // Top çarptı, durdur
+            // Top çarptı, durdurP
             Debug.Log("Engel çarpması!");
             var movement = player.GetComponent<ballMovement>();
             if (movement != null)
             {
                 movement.enabled = false;
+                newHighScore.keepHighScore();
+                newRetryButton.showRetry();
             }
 
             Rigidbody rb = player.GetComponent<Rigidbody>();

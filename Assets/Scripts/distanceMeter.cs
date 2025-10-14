@@ -6,6 +6,13 @@ public class distanceMeter : MonoBehaviour
     public Transform player;
     public TextMeshProUGUI distanceText;
     private float startZ;
+    private float distance;
+
+    public float Distance
+    {
+        get => distance;
+        set => distance = value;
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,8 +23,8 @@ public class distanceMeter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float distance = player.position.z - startZ;
+        distance = player.position.z - startZ;
         int distanceInt = Mathf.FloorToInt(distance);
-        distanceText.text = distanceInt.ToString("D6");
+        distanceText.text = distanceInt.ToString("D5");
     }
 }
