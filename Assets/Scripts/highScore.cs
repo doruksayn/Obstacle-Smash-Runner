@@ -37,6 +37,6 @@ public class highScore : MonoBehaviour
 
     void UpdateUI()
     {
-        highestScore.text = "PB: " + highestScoreInt.ToString("D5");
+        highestScore.text = "PB: " + highestScoreInt.ToString("D6");
     }
 }

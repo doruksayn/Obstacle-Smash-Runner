@@ -25,6 +25,6 @@ public class distanceMeter : MonoBehaviour
     {
         distance = player.position.z - startZ;
         int distanceInt = Mathf.FloorToInt(distance);
-        distanceText.text = distanceInt.ToString("D5");
+        distanceText.text = distanceInt.ToString("D6");
     }
 }
