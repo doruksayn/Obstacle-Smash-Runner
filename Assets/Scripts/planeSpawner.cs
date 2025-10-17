@@ -27,7 +27,7 @@ public class planeSpawner : MonoBehaviour
         Vector3 spawnPos = new Vector3(
             newPlane.transform.position.x,
             newPlane.transform.position.y,
-            player.position.z + 5.60f
+            player.position.z + 9.03f
         );
 
         GameObject updatedPlane = _newplane;

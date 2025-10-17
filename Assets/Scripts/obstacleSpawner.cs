@@ -25,7 +25,7 @@ public class ObstacleSpawner : MonoBehaviour
         int randIndex = Random.Range(0, obstacleSets.Length);
 
         // Spawn konumunu hesapla
-        Vector3 spawnPos = new Vector3(0, 0, player.position.z -1f);
+        Vector3 spawnPos = new Vector3(0, 0, player.position.z - 1f);
 
         GameObject updatedSet = newSet;
 
