@@ -28,15 +28,15 @@ Follow the below instructions to get started with Obstacle Smash Runner source c
 <div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto">Download</h2><a id="user-content-download" class="anchor" aria-label="Permalink: Download" href="#download"></a></div>
 You can get access to Abandoned Lands source code by using one of the following ways:
 <ul dir="auto">
-<li><a href="https://github.com/doruksayn/Obstacle-Smash-Runner.git">✨ Download Source Code</a></li>
+<li><a href="https://github.com/doruksayn/Obstacle-Smash-Runner/archive/refs/heads/main.zip">✨ Download Source Code</a></li>
 <li>Clone the repository locally:</li>
 </ul>
 <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>git clone https://github.com/doruksayn/Obstacle-Smash-Runner.git</pre><div class="zeroclipboard-container"><clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="git clone https://github.com/doruksayn/Abandoned-Lands.git" tabindex="0" role="button"></clipboard-copy></div></div>
 <div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto">Screenshots</h2><a id="user-content-screenshots" class="anchor" aria-label="Permalink: Screenshots" href="#screenshots"></a></div>
 <h3>Main Menu</h3>
 <img src="Images/Main Menu.png" alt="Enemy" width="640" height="300">
-<h3>Game Menu</h3>
-<img src="Images/Game Menu.png" alt="Traps" width="640" height="300">
+<h3>Start Menu</h3>
+<img src="Images/Start Menu.png" alt="Traps" width="640" height="300">
 <h3>Death Menu</h3>
 <img src="Images/In Game Menu.png" alt="Health" width="640" height="300">
 <div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto">Credits</h2><a id="user-content-credits" class="anchor" aria-label="Permalink: Credits" href="#credits"></a></div>
@@ -47,6 +47,7 @@ You can get access to Abandoned Lands source code by using one of the following 
 <br>
 <p dir="auto">Made with ❤️ by <a href="https://github.com/doruksayn">doruksayn</a></p>
 <p dir="auto">You can support by following me, thank you!!</p>
+
 
 
 
