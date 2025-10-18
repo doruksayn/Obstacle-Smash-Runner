@@ -1,6 +1,9 @@
 Obstacle Smash Runner
 ----------------
-<p>Obstacle Smash Runner is a simple yet challenging hyper-casual game where players must time their moves perfectly to pass through obstacles and reach the highest score possible. The gameplay focuses on precision, timing, and quick reflexes.<p>
+<p>Obstacle Smash Runner is a simple yet challenging hyper-casual game where players must time their moves perfectly to pass through obstacles and reach the highest score possible. 
+<br>The gameplay focuses on <b>precision, timing, and quick reflexes.</b><p>
+<p><b>GOOD LUCK HAVE FUN!</b></p>
+
 <markdown-accessiblity-table data-catalyst=""><table>
 <thead>
 <tr>
@@ -38,7 +41,9 @@ You can get access to Abandoned Lands source code by using one of the following 
 <h3>Start Menu</h3>
 <img src="Images/Start Menu.png" alt="Traps" width="640" height="300">
 <u1>
-<li><b>Score:</b> Allows you to track your actual score in-game.</li>
+<li><h4>Score System</h4>
+<img src="Images/Score.png" alt="Traps" width="540" height="250"></li>
+<li><b>Score:</b> Allows you to track your actual in-game score.</li>
 <li><b>PB Score:</b> Allows you to track your personal best score.</li>
 </u1>
 <h3>Death Menu</h3>
@@ -51,6 +56,7 @@ You can get access to Abandoned Lands source code by using one of the following 
 <br>
 <p dir="auto">Made with ❤️ by <a href="https://github.com/doruksayn">doruksayn</a></p>
 <p dir="auto">You can support by following me, thank you!!</p>
+
 
 
 
